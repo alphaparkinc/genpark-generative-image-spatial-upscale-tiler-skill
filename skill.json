@@ -1,0 +1,39 @@
+{
+  "name": "genpark-generative-image-spatial-upscale-tiler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - High-resolution image canvas spatial grid tile slicer and seam-blending coordinator for deep generative upscaling.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "magnific-ai",
+    "krea-ai",
+    "image-upscale",
+    "spatial-tiler",
+    "generative-canvas"
+  ],
+  "inputs": {
+    "input_width": {
+      "type": "integer"
+    },
+    "input_height": {
+      "type": "integer"
+    },
+    "upscale_factor": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "tiler_task_id": {
+      "type": "string"
+    },
+    "total_tiles_count": {
+      "type": "integer"
+    },
+    "seam_artifact_mitigation": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
